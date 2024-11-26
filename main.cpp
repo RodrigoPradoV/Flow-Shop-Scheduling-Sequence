@@ -22,8 +22,8 @@ using namespace std;
 #define ITERACIONES 1000
 #define ALFA 0.5
 
-const int MAX_TAREAS = 100;
-const int MAX_MAQUINAS = 100;
+#define MAX_TAREAS = 100;
+#define MAX_MAQUINAS = 100;
 
 // Estructura para representar una tarea
 struct Tarea {
@@ -97,8 +97,8 @@ vector<int> busquedaLocal(const vector<Tarea>& tareas, vector<int> secuencia, in
 
     while (mejora) {
         mejora = false;
-        for (size_t i = 0; i < secuencia.size(); ++i) {
-            for (size_t j = i + 1; j < secuencia.size(); ++j) {
+        for (int i = 0; i < secuencia.size(); ++i) {
+            for (int j = i + 1; j < secuencia.size(); ++j) {
                 swap(secuencia[i], secuencia[j]);
                 int nuevoMakespan = calcularMakespan(tareas, secuencia, numMaquinas);
                 if (nuevoMakespan < mejorMakespan) {
