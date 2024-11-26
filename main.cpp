@@ -20,7 +20,7 @@
 using namespace std;
 
 #define ITERACIONES 1000
-#define ALFA 0.3
+#define ALFA 0.5
 
 const int MAX_TAREAS = 100;
 const int MAX_MAQUINAS = 100;
