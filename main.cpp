@@ -22,8 +22,8 @@ using namespace std;
 #define ITERACIONES 1000
 #define ALFA 0.5
 
-#define MAX_TAREAS = 100;
-#define MAX_MAQUINAS = 100;
+#define MAX_TAREAS  100;
+#define MAX_MAQUINAS  100;
 
 // Estructura para representar una tarea
 struct Tarea {
